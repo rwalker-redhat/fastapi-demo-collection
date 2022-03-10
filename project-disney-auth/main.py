@@ -18,9 +18,9 @@ if __name__ == '__main__':
     configure()
     uvicorn.run(app,
                 host='0.0.0.0',
-                port=443,
+                port=8002,
                 log_level="debug",
-                ssl_keyfile="../certs/localhost.key",
-                ssl_certfile="../certs/localhost.crt")
+                ssl_keyfile="localhost.key",
+                ssl_certfile="localhost.crt")
 else:
     configure()
